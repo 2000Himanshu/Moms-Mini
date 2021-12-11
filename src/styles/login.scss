@@ -1,0 +1,98 @@
+$lightBlue: #da9983;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.login {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 90.5vh;
+  background-color: #fbebe4;
+  .loginContainer {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    .loginLeft {
+      width: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      .loginForm {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+        h2 {
+          text-align: center;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+          letter-spacing: 0.1em;
+          color: #585353;
+        }
+        input {
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          padding: 10px 0px;
+          max-width: 435px;
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid #be5f5e;
+          margin: 25px 0px;
+          outline: none;
+        }
+        .loginBtn {
+          border: 1px solid #be5f5e;
+          border-radius: 15px;
+          font-size: 24px;
+          color: #be5f5e;
+          letter-spacing: 0.1em;
+          transition: 0.5s;
+          &:hover {
+            background-color: rgba($color: #be5f5e, $alpha: 0.3);
+            color: #be5f5e;
+            cursor: pointer;
+          }
+        }
+        p {
+          font-size: 20px;
+          text-align: center;
+          a {
+            color: #be5f5e;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .loginRight {
+      width: 50%;
+      height: 100%;
+      background-color: $lightBlue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+@media (max-width: 756px) {
+  .login {
+    background-color: white;
+    margin-bottom: 20px;
+    .loginContainer {
+      .loginRight {
+        display: none;
+      }
+      .loginLeft {
+        width: 100%;
+      }
+    }
+  }
+}

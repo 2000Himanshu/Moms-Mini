@@ -1,0 +1,106 @@
+.cart {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .cartContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background-color: white;
+    padding: 0px 25px;
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    min-height: 78vh;
+    height: auto;
+    h2 {
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      letter-spacing: 0.1em;
+      color: #585353;
+      font-family: "Open Sans", sans-serif;
+    }
+    .cContainer {
+      display: flex;
+      width: 100%;
+      .itemContainer {
+        width: 70%;
+        .item {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid grey;
+          padding: 20px 0px;
+          margin-top: 20px;
+          img {
+            width: 250px;
+            object-fit: contain;
+            margin-right: 25px;
+          }
+          .itemdesc {
+            margin-left: 20px;
+            h2 {
+              font-size: 24px;
+              margin: 0;
+              color: #000;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .orderSummary {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin: 10px;
+        }
+        a {
+          margin-top: 20px;
+          border: 1px solid #b44442;
+          border-radius: 15px;
+          font-size: 18px;
+          color: #b44442;
+          letter-spacing: 0.1em;
+          transition: 0.5s;
+          padding: 15px;
+          &:hover {
+            background-color: rgba($color: #ad4e4c, $alpha: 0.3);
+            color: #b44442;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 756px) {
+  .cContainer {
+    flex-direction: column-reverse;
+    padding: 0px;
+    .orderSummary {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+        margin: 0px !important;
+      }
+      a {
+        margin-top: 15px !important;
+        font-size: 15px !important;
+        padding: 10px !important;
+      }
+    }
+  }
+}

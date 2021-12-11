@@ -1,0 +1,79 @@
+$lightBlue: white;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.aboutUs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 90.5vh;
+  background-color: white;
+  .aboutUsContainer {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    .aboutUsLeft {
+      width: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      .aboutUsForm {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+        h2 {
+          text-align: center;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+          letter-spacing: 0.1em;
+          color: #585353;
+        }
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .aboutUsRight {
+      width: 50%;
+      height: 100%;
+      background-color: $lightBlue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 756px) {
+  .aboutUs {
+    height: auto;
+    .aboutUsContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      .aboutUsLeft {
+        width: 100%;
+        h2 {
+          margin: 0px;
+          margin-top: 10px;
+        }
+        p {
+          margin-bottom: 50px;
+        }
+      }
+      .aboutUsRight {
+        width: 100%;
+        margin: 30px 5px;
+      }
+    }
+  }
+}
